@@ -1,0 +1,6 @@
+/**
+ * handle counter
+ */
+(function(){$.fn.handleCounter=function(h){function f(a){b.data("num",a);k.prop("disabled",!1);l.prop("disabled",!1);a<=e?(k.prop("disabled",!0),n.call(this,a)):null!=c&&a>=c&&(l.prop("disabled",!0),p.call(this,a));q.call(this,a)}var k=this.find(".counter-minus");var b=this.find("input");var l=this.find(".counter-plus");var d={writable:!0,minimum:1,maximize:null,onChange:function(){},onMinimum:function(){},onMaximize:function(){}},g=$.extend({},d,h);var e=g.minimum;var c=g.maximize;h=g.writable;var q=
+g.onChange;var n=g.onMinimum;var p=g.onMaximize;$.isNumeric(e)||(e=d.minimum);$.isNumeric(c)||(c=d.maximize);d=b.val();isNaN(parseInt(d))&&(d=b.val(0).val());h||b.prop("disabled",!0);f(d);b.val(d);k.click(function(){var a=parseInt(b.val());a>e&&(b.val(a-1),f(a-1))});l.click(function(){var a=parseInt(b.val());if(null==c||a<c)b.val(a+1),f(a+1)});var m;b.keyup(function(){clearTimeout(m);m=setTimeout(function(){var a=b.val();""==a&&(a=e,b.val(e));var d=/^[\d]*$/;isNaN(parseInt(a))||!d.test(a)?(b.val(b.data("num")),
+f(b.data("num"))):a<e?(b.val(e),f(e)):null!=c&&a>c?(b.val(c),f(c)):f(a)},300)});b.focus(function(){0==b.val()&&b.select()});return this}})(jQuery);

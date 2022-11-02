@@ -1,0 +1,526 @@
+@charset "utf-8";
+
+/*20141010 By Orange Kao*/
+
+.editor {
+    clear: both;
+    overflow: hidden;
+}
+
+.editor .tab_domestic2 th,
+.editor .tab_domestic2 tr,
+.editor .tab_domestic2 td {
+    border: #000 1px solid !important;
+}
+
+
+/* Display Setting */
+
+.editor a,
+.editor abbr,
+.editor acronym,
+.editor b,
+.editor basefont,
+.editor bdo,
+.editor big,
+.editor cite,
+.editor del,
+.editor dfn,
+.editor em,
+.editor font,
+.editor mark,
+.editor output,
+.editor q,
+.editor s,
+.editor span,
+.editor sub,
+.editor sup,
+.editor tt,
+.editor u,
+.editor var {
+    display: inline;
+    background-color: transparent;
+    background: transparent;
+}
+
+.editor address,
+.editor article,
+.editor aside,
+.editor blockquote,
+.editor center,
+.editor command,
+.editor datalist,
+.editor dd,
+.editor details,
+.editor dir,
+.editor div,
+.editor dl,
+.editor dt,
+.editor figcaption,
+.editor figure,
+.editor footer,
+.editor form,
+.editor header,
+.editor hgroup,
+.editor listing,
+.editor menu,
+.editor nav,
+.editor ol,
+.editor plaintext,
+.editor pre,
+.editor section,
+.editor summary,
+.editor ul,
+.editor xmp {
+    display: block;
+    background-color: transparent;
+    background: transparent;
+}
+
+.editor rp,
+.editor script {
+    display: none;
+}
+
+
+/* Display end */
+
+
+/* Base Setting */
+
+.editor dl {
+    margin: 1em 0;
+}
+
+.editor dd {
+    margin-left: 40px;
+}
+
+.editor b,
+.editor strong {
+    font-weight: bold;
+}
+
+.editor del,
+.editor s,
+.editor strike {
+    text-decoration: line-through;
+}
+
+.editor ins,
+.editor u {
+    text-decoration: underline;
+}
+
+.editor address,
+.editor cite,
+.editor em,
+.editor i,
+.editor var {
+    font-style: italic;
+}
+
+.editor code,
+.editor kbd,
+.editor samp,
+.editor tt {
+    font-family: monospace;
+}
+
+.editor big {
+    font-size: larger;
+}
+
+.editor small,
+.editor sub,
+.editor sup {
+    font-size: smaller;
+}
+
+.editor blockquote,
+.editor figure {
+    margin: 1em 40px;
+}
+
+.editor form {
+    margin: 0 0 1em 0;
+}
+
+.editor caption,
+.editor center,
+.editor th {
+    text-align: center;
+}
+
+.editor meter {
+    display: inline-block;
+    min-width: 5em;
+    min-height: 1em;
+    vertical-align: -0.2em;
+}
+
+.editor listing,
+.editor plaintext,
+.editor pre,
+.editor xmp {
+    margin: 1em 0;
+    white-space: pre;
+    font-family: monospace;
+}
+
+.editor q:before,
+.editor q:after {
+    content: '"';
+}
+
+.editor sub {
+    vertical-align: sub;
+}
+
+.editor sup {
+    vertical-align: super;
+}
+
+.editor ruby,
+.editor rt {
+    text-indent: 0;
+}
+
+.editor ruby>rt {
+    display: block;
+    font-size: 50%;
+    text-align: center;
+}
+
+.editor rt {
+    line-height: normal;
+}
+
+
+/* Base end*/
+
+
+/* form */
+
+.editor fieldset {
+    display: block;
+    margin: 0 2px;
+    padding: 0.35em 0.75em 0.625em;
+    border: 2px groove threedface;
+}
+
+.editor legend {
+    display: block;
+    padding: 0 2px;
+    border: none;
+}
+
+.editor label {
+    display: inline-block;
+    cursor: default;
+}
+
+.editor select {
+    box-sizing: border-box;
+    border: 1px solid;
+    white-space: pre;
+    cursor: default;
+}
+
+.editor textarea {
+    border: 1px solid;
+    resize: auto;
+    cursor: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: monospace;
+}
+
+.editor input,
+.editor textarea,
+.editor keygen,
+.editor select,
+.editor button,
+.editor isindex,
+.editor datagrid {
+    display: inline-block;
+    margin: 0;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-shadow: none;
+    text-indent: 0;
+    text-align: left;
+}
+
+.editor input[type="button"],
+.editor input[type="submit"],
+.editor input[type="reset"],
+.editor input[type="file"] {
+    white-space: pre;
+}
+
+.editor input[type="button"],
+.editor input[type="submit"],
+.editor input[type="reset"],
+.editor button,
+.editor input[type="file"] {
+    padding: 1px 6px;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+.editor input[type="radio"] {
+    margin: 3px 0.5ex;
+}
+
+.editor input[type="checkbox"] {
+    margin: 3px 3px 3px 4px;
+}
+
+.editor input:not([type="image"]),
+.editor textarea {
+    box-sizing: border-box;
+}
+
+.editor input[type="hidden"] {
+    display: none;
+}
+
+
+/* Form end */
+
+
+/* Color Setting */
+
+
+/* Font Color */
+
+.editor mark,
+.editor select {
+    color: #000;
+}
+
+
+/* Background Color */
+
+.editor mark {
+    background-color: #FF0;
+}
+
+.editor select,
+.editor textarea {
+    background: #fff;
+}
+
+
+/* Color end */
+
+
+/* Font Setting */
+
+.editor * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Font end */
+
+
+/*-------------------*/
+
+.editor h1,
+.editor h2,
+.editor h3,
+.editor h4,
+.editor h5,
+.editor h6 {
+    height: auto;
+    line-height: normal;
+    text-align: left;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    font-weight: bold;
+    font-family: inherit;
+    background: none!important;
+    text-indent: 0px!important;
+}
+
+.editor h1 {
+    margin: 0.5em 0;
+    font-size: 19px;
+}
+
+.editor h2 {
+    margin: 0.5em 0;
+    font-size: 17px;
+}
+
+.editor h3 {
+    margin: 0.5em 0;
+    font-size: 17px;
+}
+
+.editor h4 {
+    margin: 0.5em 0;
+    font-size: 15px;
+}
+
+.editor h5 {
+    margin: 0.4em 0;
+    font-size: 15px;
+}
+
+.editor h6 {
+    margin: 0.3em 0;
+    font-size: 13px;
+}
+
+
+.editor p {
+    margin: 0.3em 0;
+    padding: 0;
+    letter-spacing: 0;
+    word-spacing: normal;
+    text-indent: 0;
+    text-align: left;
+}
+
+
+
+
+.editor ol,
+.editor ul,
+.editor dir,
+.editor menu {
+    margin: 1em 0;
+    padding-left: 40px;
+}
+
+.editor ol,
+.rule-wrapper ol {
+    list-style-type: decimal!important;
+}
+
+.editor ul,
+.editor dir,
+.editor menu,
+.rule-wrapper ol {
+    list-style: square!important;
+}
+
+
+
+.editor ul li,
+.editor li,
+.rule-wrapper li {
+    display: list-item!important;
+    position: relative!important;
+    float: left!important;
+    cursor: auto!important;
+    list-style: square;
+    line-height: 22px;
+    font-size: 15px;
+    width: 100%;
+    text-align: left!important;
+}
+
+.editor ol li,
+.rule-wrapper ol li {
+    list-style: decimal!important;
+}
+
+
+
+/* Table */
+
+.editor table {
+    display: table;
+    /*border-collapse:separate;*/
+    border-spacing: 2px;
+    table-layout: auto!important;
+    border-spacing: 2px;
+    border-color: #000!important;
+    width: auto;
+    font-weight: normal;
+    line-height: inherit;
+    white-space: normal;
+}
+
+.editor .tab_domestic {
+    border: 1px solid #000;
+}
+
+.editor .tab_domestic th,
+.editor .tab_domestic tr,
+.editor .tab_domestic td {
+    border: 1px solid #000;
+    text-align: -webkit-center;
+}
+
+.editor .tab_domestic2 th,
+.editor .tab_domestic2 tr,
+.editor .tab_domestic2 td {
+    border: 1px solid #000;
+    text-align: -webkit-center;
+}
+
+.editor caption {
+    display: table-caption;
+    text-align: center;
+}
+
+.editor thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.editor tfoot {
+    display: table-footer-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.editor tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+
+.editor tbody,
+.editor table tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+
+.editor tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.editor td,
+.editor th {
+    display: table-cell;
+}
+
+
+
+
+
+/* --------------------- Spec Setting --------------------- */
+
+.editor table tr td {
+    color: inherit !important
+}
+
+.editor table tr td {
+    font color: inherit !important
+}
